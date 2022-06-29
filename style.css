@@ -1,0 +1,9 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+.hero {
+  height: 90vh;
+  display: flex;
+  background-color: darkcyan;
+}
