@@ -131,7 +131,7 @@
       </div>
     </section>
 
-    <section class="automatize botoes">
+    <!-- <section class="automatize botoes">
       <div class="single-column">
         <h1>Botões com Fila de Atendimento</h1>
         <h2>Agilize o atendimento de balcão com fluxo intenso</h2>
@@ -169,7 +169,7 @@
         <h4>card title</h4>
         <p>card content</p>
       </div>
-    </section>
+    </section> -->
 
     <section id="depoimentos" class="single-column">
       <h1>O que dizem nossos clientes</h1>
@@ -215,23 +215,89 @@
       </div>
     </section>
 
-    <section id="contato" class="contato">
-      Fale Conosco Nosso atendimento é de Segunda à Sexta de 9 às 19 horas.
-      WhatsApp: (31) 9 9747-7719 Auto Atendimento WhatsApp Atende seus clientes
-      no Piloto Automático 24 horas por dia! Direcione sua demanda para sua
-      loja, site ou mídias sociais e otimize a sua produtividade.
+    <section id="planos" class="hero">
+      <div class="title single-column">
+        <h1>Planos e preços</h1>
 
-      <form id="form" action="https://www.freecodecamp.com/email-submit">
-        <label for="email"
-          >Seu email:
-          <input
+        <div class="planos-container">
+          <div class="plano-card">
+            <h2 style="text-align: center">Básico</h2>
+            <h1 style="text-align: center">R$49/mês</h1>
+            <ul>
+              <li>Auto Atendimento / Robô</li>
+              <li>Mensagens Ilimitadas</li>
+              <li>Clientes Ilimitados</li>
+              <li>Multi Atendimento</li>
+              <li>Até 2 Usuários</li>
+            </ul>
+            <div class="plano-cta">
+              <h5>ATIVAÇÃO IMEDIATA: SEM FIDELIDADE, Cancele quando quiser!</h5>
+
+              <button style="width: 100%" class="btn-calltoaction">
+                Teste grátis
+              </button>
+            </div>
+          </div>
+          <div class="plano-card">
+            <h2 style="text-align: center">Profissional</h2>
+            <h1 style="text-align: center">R$49/mês</h1>
+            <ul>
+              <li>Auto Atendimento / Robô</li>
+              <li>Mensagens Ilimitadas</li>
+              <li>Clientes Ilimitados</li>
+              <li>Multi Atendimento</li>
+              <li><strong> Até 10 Usuários </strong></li>
+              <li><strong>Formulário Externo de Cadastro</strong></li>
+              <li><strong>Importação Receita Federal/Correios</strong></li>
+              <li><strong>BÔNUS Funil de Atendimento</strong></li>
+            </ul>
+
+            <h5>ATIVAÇÃO IMEDIATA: SEM FIDELIDADE, Cancele quando quiser!</h5>
+
+            <button style="width: 100%" class="btn-calltoaction">
+              Teste grátis
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contato" class="contato">
+      <h1>Fale Conosco</h1>
+      <div class="columns">
+        <img src="./whitelogo.png" alt="" srcset="" />
+
+        <form id="form" action="https://www.freecodecamp.com/email-submit">
+          <h3>Deixe uma mensagem:</h3>
+          <label for="email">Seu nome: </label
+          ><input
+            type="text"
+            name="nome"
+            id="nome"
+            placeholder="Digite seu nome"
+          />
+          <label for="email">Seu email: </label
+          ><input
             type="email"
             name="email"
             id="email"
             placeholder="Digite seu email"
-        /></label>
-        <button type="submit" id="submit">Enviar</button>
-      </form>
+          />
+          <label for="mensagem">Sua mensagem:</label>
+          <textarea
+            name="mensagem"
+            id="mensagem"
+            rows="5"
+            cols="30"
+            placeholder="Digite sua mensagem..."
+          ></textarea>
+          <button type="submit" id="submit">Enviar</button>
+        </form>
+        <div>
+          <p>Nosso atendimento é de Segunda à Sexta de 9 às 19 horas.</p>
+          <p>WhatsApp: (31) 9 9747-7719</p>
+        </div>
+      </div>
     </section>
     <footer>Copyright &copy; 2022</footer>
   </body>
