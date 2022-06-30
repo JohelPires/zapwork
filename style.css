@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@200;300;400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Hubballi&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Secular+One&display=swap');
 
 * {
   margin: 0;
@@ -34,6 +35,7 @@ nav {
   align-items: center;
   justify-content: space-between;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  z-index: 99;
 }
 
 a {
@@ -103,25 +105,43 @@ section {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
+  justify-content: center;
 }
 
 .depoimento {
+  position: relative;
   border-radius: 10px;
   background-color: rgb(91, 91, 100);
   background: linear-gradient(45deg, rgb(79, 81, 88), rgb(158, 158, 158));
+  background: linear-gradient(45deg, rgb(31, 86, 141), cadetblue);
   color: white;
-  max-width: 300px;
+  max-width: 500px;
   padding: 20px 40px;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
 }
 .depoimento::before {
   content: '"';
   font-size: 200px;
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: 'Secular One', serif;
   position: absolute;
-  color: rgba(255, 255, 255, 0.2);
-  margin-top: 50px;
-  margin-left: -15px;
+  color: rgba(255, 255, 255, 0.1);
+  margin-top: 60px;
+  left: 5px;
+  transform: rotateY(180deg);
+}
+.depoimento::after {
+  content: '"';
+  font-size: 200px;
+  font-family: 'Secular One', serif;
+  position: absolute;
+  color: rgba(255, 255, 255, 0.1);
+  /* margin-top: 0px; */
+  right: 0px;
+}
+
+.contato {
+  background-color: rgb(26, 33, 39);
+  color: white;
 }
 
 h1 {
